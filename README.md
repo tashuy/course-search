@@ -1,6 +1,6 @@
-# Course Search with Elasticsearch
+# 📚 Course Search with Elasticsearch
 
-This project demonstrates a Spring Boot application that integrates with **Elasticsearch** to index and search course data with advanced filtering, sorting, and pagination capabilities.
+This project demonstrates a **Spring Boot** application that integrates with **Elasticsearch** to index and search course data with advanced filtering, sorting, pagination, **autocomplete suggestions**, and **fuzzy search**.
 
 ---
 
@@ -10,6 +10,8 @@ This project demonstrates a Spring Boot application that integrates with **Elast
 ✅ Bulk indexing of **50 sample course documents**.
 ✅ REST API for full-text search and filtering.
 ✅ Sorting and pagination support.
+✅ **Autocomplete suggestions** for course titles.
+✅ **Fuzzy search** to handle typos in search queries.
 ✅ Ready-to-run with simple commands.
 
 ---
@@ -135,6 +137,9 @@ public class CourseDocument {
     private int maxAge;
     private double price;
     private Instant nextSessionDate;
+    
+    // Autocomplete support
+    private String[] suggest;
 }
 ```
 
@@ -194,7 +199,73 @@ curl "http://localhost:8080/api/search?q=Math&minAge=8&maxPrice=50&sort=priceAsc
 
 ---
 
-## 🧪 Testing & Verification
+## 🔥 Part 4: Assignment B (Bonus)
+
+### 4.1 Autocomplete Suggestions (Completion Suggester)
+
+We added a **completion field** (`suggest`) to the course index to support title autocompletion.
+
+#### 🔗 Endpoint
+
+```
+GET /api/search/suggest?q={partialTitle}
+```
+
+#### Example Request
+
+```bash
+curl "http://localhost:8080/api/search/suggest?q=phy"
+```
+
+#### Example Response
+
+```json
+[
+  "Physics Basics",
+  "Physical Education 101",
+  "Physics for Beginners"
+]
+```
+
+✅ Returns up to 10 suggested course titles that **start with** the provided text.
+
+---
+
+### 4.2 Fuzzy Search Enhancement
+
+We enhanced the search API to allow **fuzzy matching** so small typos are tolerated.
+
+#### 🔗 Endpoint
+
+```
+GET /api/search?q={searchKeyword}
+```
+
+#### Example Request
+
+```bash
+curl "http://localhost:8080/api/search?q=dinors"
+```
+
+✅ Even though `dinors` is a typo, it will match:
+
+```json
+[
+  {
+    "id": "8",
+    "title": "Dinosaurs 101",
+    "category": "Science",
+    "price": 49.99,
+    "nextSessionDate": "2025-08-01T15:00:00Z"
+  }
+]
+```
+
+✅ Fuzzy matching is applied only on the `title` field.
+
+---
+
+## 🗪️ Testing & Verification
 
 ### ✅ Basic Tests
 
@@ -208,11 +279,11 @@ curl "http://localhost:8080/api/search?q=Math&minAge=8&maxPrice=50&sort=priceAsc
 # Search all courses
 curl "http://localhost:8080/api/search"
 
-# Search for Science courses with price <= 30
-curl "http://localhost:8080/api/search?category=Science&maxPrice=30"
+# Autocomplete suggestions
+curl "http://localhost:8080/api/search/suggest?q=phy"
 
-# Get upcoming courses sorted by price (high to low)
-curl "http://localhost:8080/api/search?sort=priceDesc"
+# Fuzzy search with typo
+curl "http://localhost:8080/api/search?q=dinors"
 ```
 
 ---
@@ -242,7 +313,7 @@ curl "http://localhost:8080/api/search?sort=priceDesc"
 
 ---
 
-## 🛠 Tech Stack
+## 🛠️ Tech Stack
 
 * **Spring Boot** 3.x
 * **Elasticsearch** 8.x
@@ -251,5 +322,3 @@ curl "http://localhost:8080/api/search?sort=priceDesc"
 * **Lombok**
 
 ---
-
-
