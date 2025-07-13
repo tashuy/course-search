@@ -1,8 +1,6 @@
 package com.undoschool.elasticsearch.course_search.Controller;
 
-
 import com.undoschool.elasticsearch.course_search.entity.CourseDocument;
-
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -17,6 +15,12 @@ import java.util.List;
 public class CourseController {
 
     private final com.undoschool.elasticsearch.course_search.service.CourseSearch courseSearch;
+
+    // 🔥 Autocomplete endpoint
+    @GetMapping("/suggest")
+    public List<String> suggest(@RequestParam("q") String query) {
+        return courseSearch.suggest(query);  // 🟢 FIXED THIS LINE
+    }
 
     @GetMapping
     public List<CourseDocument> searchCourses(

@@ -16,7 +16,8 @@
       "minAge": { "type": "integer" },
       "maxAge": { "type": "integer" },
       "price": { "type": "float" },
-      "nextSessionDate": { "type": "date" }
+      "nextSessionDate": { "type": "date" },
+      "suggest": { "type": "completion" }
     }
   }
 }

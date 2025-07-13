@@ -1,0 +1,752 @@
+[
+  {
+    "id": "1",
+    "title": "Course Title 1",
+    "description": "This course covers topic 1 in depth with practical examples and engaging activities.",
+    "category": "Category2",
+    "type": "COURSE",
+    "gradeRange": "2th\u20134th",
+    "minAge": 6,
+    "maxAge": 16,
+    "price": 52.5,
+    "nextSessionDate": "2025-02-02T10:00:00Z",
+    "suggest": [
+      "Course Title 1"
+    ]
+  },
+  {
+    "id": "2",
+    "title": "Course Title 2",
+    "description": "This course covers topic 2 in depth with practical examples and engaging activities.",
+    "category": "Category3",
+    "type": "CLUB",
+    "gradeRange": "3th\u20135th",
+    "minAge": 7,
+    "maxAge": 17,
+    "price": 55.0,
+    "nextSessionDate": "2025-03-03T10:00:00Z",
+    "suggest": [
+      "Course Title 2"
+    ]
+  },
+  {
+    "id": "3",
+    "title": "Course Title 3",
+    "description": "This course covers topic 3 in depth with practical examples and engaging activities.",
+    "category": "Category4",
+    "type": "ONE_TIME",
+    "gradeRange": "4th\u20136th",
+    "minAge": 8,
+    "maxAge": 18,
+    "price": 57.5,
+    "nextSessionDate": "2025-04-04T10:00:00Z",
+    "suggest": [
+      "Course Title 3"
+    ]
+  },
+  {
+    "id": "4",
+    "title": "Course Title 4",
+    "description": "This course covers topic 4 in depth with practical examples and engaging activities.",
+    "category": "Category5",
+    "type": "COURSE",
+    "gradeRange": "5th\u20137th",
+    "minAge": 9,
+    "maxAge": 19,
+    "price": 60.0,
+    "nextSessionDate": "2025-05-05T10:00:00Z",
+    "suggest": [
+      "Course Title 4"
+    ]
+  },
+  {
+    "id": "5",
+    "title": "Course Title 5",
+    "description": "This course covers topic 5 in depth with practical examples and engaging activities.",
+    "category": "Category1",
+    "type": "CLUB",
+    "gradeRange": "6th\u20138th",
+    "minAge": 10,
+    "maxAge": 10,
+    "price": 62.5,
+    "nextSessionDate": "2025-06-06T10:00:00Z",
+    "suggest": [
+      "Course Title 5"
+    ]
+  },
+  {
+    "id": "6",
+    "title": "Course Title 6",
+    "description": "This course covers topic 6 in depth with practical examples and engaging activities.",
+    "category": "Category2",
+    "type": "ONE_TIME",
+    "gradeRange": "7th\u20139th",
+    "minAge": 11,
+    "maxAge": 11,
+    "price": 65.0,
+    "nextSessionDate": "2025-07-07T10:00:00Z",
+    "suggest": [
+      "Course Title 6"
+    ]
+  },
+  {
+    "id": "7",
+    "title": "Course Title 7",
+    "description": "This course covers topic 7 in depth with practical examples and engaging activities.",
+    "category": "Category3",
+    "type": "COURSE",
+    "gradeRange": "8th\u201310th",
+    "minAge": 12,
+    "maxAge": 12,
+    "price": 67.5,
+    "nextSessionDate": "2025-08-08T10:00:00Z",
+    "suggest": [
+      "Course Title 7"
+    ]
+  },
+  {
+    "id": "8",
+    "title": "Course Title 8",
+    "description": "This course covers topic 8 in depth with practical examples and engaging activities.",
+    "category": "Category4",
+    "type": "CLUB",
+    "gradeRange": "9th\u201311th",
+    "minAge": 13,
+    "maxAge": 13,
+    "price": 70.0,
+    "nextSessionDate": "2025-09-09T10:00:00Z",
+    "suggest": [
+      "Course Title 8"
+    ]
+  },
+  {
+    "id": "9",
+    "title": "Course Title 9",
+    "description": "This course covers topic 9 in depth with practical examples and engaging activities.",
+    "category": "Category5",
+    "type": "ONE_TIME",
+    "gradeRange": "10th\u201312th",
+    "minAge": 14,
+    "maxAge": 14,
+    "price": 72.5,
+    "nextSessionDate": "2025-10-10T10:00:00Z",
+    "suggest": [
+      "Course Title 9"
+    ]
+  },
+  {
+    "id": "10",
+    "title": "Course Title 10",
+    "description": "This course covers topic 10 in depth with practical examples and engaging activities.",
+    "category": "Category1",
+    "type": "COURSE",
+    "gradeRange": "11th\u20131th",
+    "minAge": 5,
+    "maxAge": 15,
+    "price": 75.0,
+    "nextSessionDate": "2025-11-11T10:00:00Z",
+    "suggest": [
+      "Course Title 10"
+    ]
+  },
+  {
+    "id": "11",
+    "title": "Course Title 11",
+    "description": "This course covers topic 11 in depth with practical examples and engaging activities.",
+    "category": "Category2",
+    "type": "CLUB",
+    "gradeRange": "12th\u20132th",
+    "minAge": 6,
+    "maxAge": 16,
+    "price": 77.5,
+    "nextSessionDate": "2025-12-12T10:00:00Z",
+    "suggest": [
+      "Course Title 11"
+    ]
+  },
+  {
+    "id": "12",
+    "title": "Course Title 12",
+    "description": "This course covers topic 12 in depth with practical examples and engaging activities.",
+    "category": "Category3",
+    "type": "ONE_TIME",
+    "gradeRange": "1th\u20133th",
+    "minAge": 7,
+    "maxAge": 17,
+    "price": 80.0,
+    "nextSessionDate": "2025-01-13T10:00:00Z",
+    "suggest": [
+      "Course Title 12"
+    ]
+  },
+  {
+    "id": "13",
+    "title": "Course Title 13",
+    "description": "This course covers topic 13 in depth with practical examples and engaging activities.",
+    "category": "Category4",
+    "type": "COURSE",
+    "gradeRange": "2th\u20134th",
+    "minAge": 8,
+    "maxAge": 18,
+    "price": 82.5,
+    "nextSessionDate": "2025-02-14T10:00:00Z",
+    "suggest": [
+      "Course Title 13"
+    ]
+  },
+  {
+    "id": "14",
+    "title": "Course Title 14",
+    "description": "This course covers topic 14 in depth with practical examples and engaging activities.",
+    "category": "Category5",
+    "type": "CLUB",
+    "gradeRange": "3th\u20135th",
+    "minAge": 9,
+    "maxAge": 19,
+    "price": 85.0,
+    "nextSessionDate": "2025-03-15T10:00:00Z",
+    "suggest": [
+      "Course Title 14"
+    ]
+  },
+  {
+    "id": "15",
+    "title": "Course Title 15",
+    "description": "This course covers topic 15 in depth with practical examples and engaging activities.",
+    "category": "Category1",
+    "type": "ONE_TIME",
+    "gradeRange": "4th\u20136th",
+    "minAge": 10,
+    "maxAge": 10,
+    "price": 87.5,
+    "nextSessionDate": "2025-04-16T10:00:00Z",
+    "suggest": [
+      "Course Title 15"
+    ]
+  },
+  {
+    "id": "16",
+    "title": "Course Title 16",
+    "description": "This course covers topic 16 in depth with practical examples and engaging activities.",
+    "category": "Category2",
+    "type": "COURSE",
+    "gradeRange": "5th\u20137th",
+    "minAge": 11,
+    "maxAge": 11,
+    "price": 90.0,
+    "nextSessionDate": "2025-05-17T10:00:00Z",
+    "suggest": [
+      "Course Title 16"
+    ]
+  },
+  {
+    "id": "17",
+    "title": "Course Title 17",
+    "description": "This course covers topic 17 in depth with practical examples and engaging activities.",
+    "category": "Category3",
+    "type": "CLUB",
+    "gradeRange": "6th\u20138th",
+    "minAge": 12,
+    "maxAge": 12,
+    "price": 92.5,
+    "nextSessionDate": "2025-06-18T10:00:00Z",
+    "suggest": [
+      "Course Title 17"
+    ]
+  },
+  {
+    "id": "18",
+    "title": "Course Title 18",
+    "description": "This course covers topic 18 in depth with practical examples and engaging activities.",
+    "category": "Category4",
+    "type": "ONE_TIME",
+    "gradeRange": "7th\u20139th",
+    "minAge": 13,
+    "maxAge": 13,
+    "price": 95.0,
+    "nextSessionDate": "2025-07-19T10:00:00Z",
+    "suggest": [
+      "Course Title 18"
+    ]
+  },
+  {
+    "id": "19",
+    "title": "Course Title 19",
+    "description": "This course covers topic 19 in depth with practical examples and engaging activities.",
+    "category": "Category5",
+    "type": "COURSE",
+    "gradeRange": "8th\u201310th",
+    "minAge": 14,
+    "maxAge": 14,
+    "price": 97.5,
+    "nextSessionDate": "2025-08-20T10:00:00Z",
+    "suggest": [
+      "Course Title 19"
+    ]
+  },
+  {
+    "id": "20",
+    "title": "Course Title 20",
+    "description": "This course covers topic 20 in depth with practical examples and engaging activities.",
+    "category": "Category1",
+    "type": "CLUB",
+    "gradeRange": "9th\u201311th",
+    "minAge": 5,
+    "maxAge": 15,
+    "price": 100.0,
+    "nextSessionDate": "2025-09-21T10:00:00Z",
+    "suggest": [
+      "Course Title 20"
+    ]
+  },
+  {
+    "id": "21",
+    "title": "Course Title 21",
+    "description": "This course covers topic 21 in depth with practical examples and engaging activities.",
+    "category": "Category2",
+    "type": "ONE_TIME",
+    "gradeRange": "10th\u201312th",
+    "minAge": 6,
+    "maxAge": 16,
+    "price": 102.5,
+    "nextSessionDate": "2025-10-22T10:00:00Z",
+    "suggest": [
+      "Course Title 21"
+    ]
+  },
+  {
+    "id": "22",
+    "title": "Course Title 22",
+    "description": "This course covers topic 22 in depth with practical examples and engaging activities.",
+    "category": "Category3",
+    "type": "COURSE",
+    "gradeRange": "11th\u20131th",
+    "minAge": 7,
+    "maxAge": 17,
+    "price": 105.0,
+    "nextSessionDate": "2025-11-23T10:00:00Z",
+    "suggest": [
+      "Course Title 22"
+    ]
+  },
+  {
+    "id": "23",
+    "title": "Course Title 23",
+    "description": "This course covers topic 23 in depth with practical examples and engaging activities.",
+    "category": "Category4",
+    "type": "CLUB",
+    "gradeRange": "12th\u20132th",
+    "minAge": 8,
+    "maxAge": 18,
+    "price": 107.5,
+    "nextSessionDate": "2025-12-24T10:00:00Z",
+    "suggest": [
+      "Course Title 23"
+    ]
+  },
+  {
+    "id": "24",
+    "title": "Course Title 24",
+    "description": "This course covers topic 24 in depth with practical examples and engaging activities.",
+    "category": "Category5",
+    "type": "ONE_TIME",
+    "gradeRange": "1th\u20133th",
+    "minAge": 9,
+    "maxAge": 19,
+    "price": 110.0,
+    "nextSessionDate": "2025-01-25T10:00:00Z",
+    "suggest": [
+      "Course Title 24"
+    ]
+  },
+  {
+    "id": "25",
+    "title": "Course Title 25",
+    "description": "This course covers topic 25 in depth with practical examples and engaging activities.",
+    "category": "Category1",
+    "type": "COURSE",
+    "gradeRange": "2th\u20134th",
+    "minAge": 10,
+    "maxAge": 10,
+    "price": 112.5,
+    "nextSessionDate": "2025-02-26T10:00:00Z",
+    "suggest": [
+      "Course Title 25"
+    ]
+  },
+  {
+    "id": "26",
+    "title": "Course Title 26",
+    "description": "This course covers topic 26 in depth with practical examples and engaging activities.",
+    "category": "Category2",
+    "type": "CLUB",
+    "gradeRange": "3th\u20135th",
+    "minAge": 11,
+    "maxAge": 11,
+    "price": 115.0,
+    "nextSessionDate": "2025-03-27T10:00:00Z",
+    "suggest": [
+      "Course Title 26"
+    ]
+  },
+  {
+    "id": "27",
+    "title": "Course Title 27",
+    "description": "This course covers topic 27 in depth with practical examples and engaging activities.",
+    "category": "Category3",
+    "type": "ONE_TIME",
+    "gradeRange": "4th\u20136th",
+    "minAge": 12,
+    "maxAge": 12,
+    "price": 117.5,
+    "nextSessionDate": "2025-04-28T10:00:00Z",
+    "suggest": [
+      "Course Title 27"
+    ]
+  },
+  {
+    "id": "28",
+    "title": "Course Title 28",
+    "description": "This course covers topic 28 in depth with practical examples and engaging activities.",
+    "category": "Category4",
+    "type": "COURSE",
+    "gradeRange": "5th\u20137th",
+    "minAge": 13,
+    "maxAge": 13,
+    "price": 120.0,
+    "nextSessionDate": "2025-05-01T10:00:00Z",
+    "suggest": [
+      "Course Title 28"
+    ]
+  },
+  {
+    "id": "29",
+    "title": "Course Title 29",
+    "description": "This course covers topic 29 in depth with practical examples and engaging activities.",
+    "category": "Category5",
+    "type": "CLUB",
+    "gradeRange": "6th\u20138th",
+    "minAge": 14,
+    "maxAge": 14,
+    "price": 122.5,
+    "nextSessionDate": "2025-06-02T10:00:00Z",
+    "suggest": [
+      "Course Title 29"
+    ]
+  },
+  {
+    "id": "30",
+    "title": "Course Title 30",
+    "description": "This course covers topic 30 in depth with practical examples and engaging activities.",
+    "category": "Category1",
+    "type": "ONE_TIME",
+    "gradeRange": "7th\u20139th",
+    "minAge": 5,
+    "maxAge": 15,
+    "price": 125.0,
+    "nextSessionDate": "2025-07-03T10:00:00Z",
+    "suggest": [
+      "Course Title 30"
+    ]
+  },
+  {
+    "id": "31",
+    "title": "Course Title 31",
+    "description": "This course covers topic 31 in depth with practical examples and engaging activities.",
+    "category": "Category2",
+    "type": "COURSE",
+    "gradeRange": "8th\u201310th",
+    "minAge": 6,
+    "maxAge": 16,
+    "price": 127.5,
+    "nextSessionDate": "2025-08-04T10:00:00Z",
+    "suggest": [
+      "Course Title 31"
+    ]
+  },
+  {
+    "id": "32",
+    "title": "Course Title 32",
+    "description": "This course covers topic 32 in depth with practical examples and engaging activities.",
+    "category": "Category3",
+    "type": "CLUB",
+    "gradeRange": "9th\u201311th",
+    "minAge": 7,
+    "maxAge": 17,
+    "price": 130.0,
+    "nextSessionDate": "2025-09-05T10:00:00Z",
+    "suggest": [
+      "Course Title 32"
+    ]
+  },
+  {
+    "id": "33",
+    "title": "Course Title 33",
+    "description": "This course covers topic 33 in depth with practical examples and engaging activities.",
+    "category": "Category4",
+    "type": "ONE_TIME",
+    "gradeRange": "10th\u201312th",
+    "minAge": 8,
+    "maxAge": 18,
+    "price": 132.5,
+    "nextSessionDate": "2025-10-06T10:00:00Z",
+    "suggest": [
+      "Course Title 33"
+    ]
+  },
+  {
+    "id": "34",
+    "title": "Course Title 34",
+    "description": "This course covers topic 34 in depth with practical examples and engaging activities.",
+    "category": "Category5",
+    "type": "COURSE",
+    "gradeRange": "11th\u20131th",
+    "minAge": 9,
+    "maxAge": 19,
+    "price": 135.0,
+    "nextSessionDate": "2025-11-07T10:00:00Z",
+    "suggest": [
+      "Course Title 34"
+    ]
+  },
+  {
+    "id": "35",
+    "title": "Course Title 35",
+    "description": "This course covers topic 35 in depth with practical examples and engaging activities.",
+    "category": "Category1",
+    "type": "CLUB",
+    "gradeRange": "12th\u20132th",
+    "minAge": 10,
+    "maxAge": 10,
+    "price": 137.5,
+    "nextSessionDate": "2025-12-08T10:00:00Z",
+    "suggest": [
+      "Course Title 35"
+    ]
+  },
+  {
+    "id": "36",
+    "title": "Course Title 36",
+    "description": "This course covers topic 36 in depth with practical examples and engaging activities.",
+    "category": "Category2",
+    "type": "ONE_TIME",
+    "gradeRange": "1th\u20133th",
+    "minAge": 11,
+    "maxAge": 11,
+    "price": 140.0,
+    "nextSessionDate": "2025-01-09T10:00:00Z",
+    "suggest": [
+      "Course Title 36"
+    ]
+  },
+  {
+    "id": "37",
+    "title": "Course Title 37",
+    "description": "This course covers topic 37 in depth with practical examples and engaging activities.",
+    "category": "Category3",
+    "type": "COURSE",
+    "gradeRange": "2th\u20134th",
+    "minAge": 12,
+    "maxAge": 12,
+    "price": 142.5,
+    "nextSessionDate": "2025-02-10T10:00:00Z",
+    "suggest": [
+      "Course Title 37"
+    ]
+  },
+  {
+    "id": "38",
+    "title": "Course Title 38",
+    "description": "This course covers topic 38 in depth with practical examples and engaging activities.",
+    "category": "Category4",
+    "type": "CLUB",
+    "gradeRange": "3th\u20135th",
+    "minAge": 13,
+    "maxAge": 13,
+    "price": 145.0,
+    "nextSessionDate": "2025-03-11T10:00:00Z",
+    "suggest": [
+      "Course Title 38"
+    ]
+  },
+  {
+    "id": "39",
+    "title": "Course Title 39",
+    "description": "This course covers topic 39 in depth with practical examples and engaging activities.",
+    "category": "Category5",
+    "type": "ONE_TIME",
+    "gradeRange": "4th\u20136th",
+    "minAge": 14,
+    "maxAge": 14,
+    "price": 147.5,
+    "nextSessionDate": "2025-04-12T10:00:00Z",
+    "suggest": [
+      "Course Title 39"
+    ]
+  },
+  {
+    "id": "40",
+    "title": "Course Title 40",
+    "description": "This course covers topic 40 in depth with practical examples and engaging activities.",
+    "category": "Category1",
+    "type": "COURSE",
+    "gradeRange": "5th\u20137th",
+    "minAge": 5,
+    "maxAge": 15,
+    "price": 150.0,
+    "nextSessionDate": "2025-05-13T10:00:00Z",
+    "suggest": [
+      "Course Title 40"
+    ]
+  },
+  {
+    "id": "41",
+    "title": "Course Title 41",
+    "description": "This course covers topic 41 in depth with practical examples and engaging activities.",
+    "category": "Category2",
+    "type": "CLUB",
+    "gradeRange": "6th\u20138th",
+    "minAge": 6,
+    "maxAge": 16,
+    "price": 152.5,
+    "nextSessionDate": "2025-06-14T10:00:00Z",
+    "suggest": [
+      "Course Title 41"
+    ]
+  },
+  {
+    "id": "42",
+    "title": "Course Title 42",
+    "description": "This course covers topic 42 in depth with practical examples and engaging activities.",
+    "category": "Category3",
+    "type": "ONE_TIME",
+    "gradeRange": "7th\u20139th",
+    "minAge": 7,
+    "maxAge": 17,
+    "price": 155.0,
+    "nextSessionDate": "2025-07-15T10:00:00Z",
+    "suggest": [
+      "Course Title 42"
+    ]
+  },
+  {
+    "id": "43",
+    "title": "Course Title 43",
+    "description": "This course covers topic 43 in depth with practical examples and engaging activities.",
+    "category": "Category4",
+    "type": "COURSE",
+    "gradeRange": "8th\u201310th",
+    "minAge": 8,
+    "maxAge": 18,
+    "price": 157.5,
+    "nextSessionDate": "2025-08-16T10:00:00Z",
+    "suggest": [
+      "Course Title 43"
+    ]
+  },
+  {
+    "id": "44",
+    "title": "Course Title 44",
+    "description": "This course covers topic 44 in depth with practical examples and engaging activities.",
+    "category": "Category5",
+    "type": "CLUB",
+    "gradeRange": "9th\u201311th",
+    "minAge": 9,
+    "maxAge": 19,
+    "price": 160.0,
+    "nextSessionDate": "2025-09-17T10:00:00Z",
+    "suggest": [
+      "Course Title 44"
+    ]
+  },
+  {
+    "id": "45",
+    "title": "Course Title 45",
+    "description": "This course covers topic 45 in depth with practical examples and engaging activities.",
+    "category": "Category1",
+    "type": "ONE_TIME",
+    "gradeRange": "10th\u201312th",
+    "minAge": 10,
+    "maxAge": 10,
+    "price": 162.5,
+    "nextSessionDate": "2025-10-18T10:00:00Z",
+    "suggest": [
+      "Course Title 45"
+    ]
+  },
+  {
+    "id": "46",
+    "title": "Course Title 46",
+    "description": "This course covers topic 46 in depth with practical examples and engaging activities.",
+    "category": "Category2",
+    "type": "COURSE",
+    "gradeRange": "11th\u20131th",
+    "minAge": 11,
+    "maxAge": 11,
+    "price": 165.0,
+    "nextSessionDate": "2025-11-19T10:00:00Z",
+    "suggest": [
+      "Course Title 46"
+    ]
+  },
+  {
+    "id": "47",
+    "title": "Course Title 47",
+    "description": "This course covers topic 47 in depth with practical examples and engaging activities.",
+    "category": "Category3",
+    "type": "CLUB",
+    "gradeRange": "12th\u20132th",
+    "minAge": 12,
+    "maxAge": 12,
+    "price": 167.5,
+    "nextSessionDate": "2025-12-20T10:00:00Z",
+    "suggest": [
+      "Course Title 47"
+    ]
+  },
+  {
+    "id": "48",
+    "title": "Course Title 48",
+    "description": "This course covers topic 48 in depth with practical examples and engaging activities.",
+    "category": "Category4",
+    "type": "ONE_TIME",
+    "gradeRange": "1th\u20133th",
+    "minAge": 13,
+    "maxAge": 13,
+    "price": 170.0,
+    "nextSessionDate": "2025-01-21T10:00:00Z",
+    "suggest": [
+      "Course Title 48"
+    ]
+  },
+  {
+    "id": "49",
+    "title": "Course Title 49",
+    "description": "This course covers topic 49 in depth with practical examples and engaging activities.",
+    "category": "Category5",
+    "type": "COURSE",
+    "gradeRange": "2th\u20134th",
+    "minAge": 14,
+    "maxAge": 14,
+    "price": 172.5,
+    "nextSessionDate": "2025-02-22T10:00:00Z",
+    "suggest": [
+      "Course Title 49"
+    ]
+  },
+  {
+    "id": "50",
+    "title": "Course Title 50",
+    "description": "This course covers topic 50 in depth with practical examples and engaging activities.",
+    "category": "Category1",
+    "type": "CLUB",
+    "gradeRange": "3th\u20135th",
+    "minAge": 5,
+    "maxAge": 15,
+    "price": 175.0,
+    "nextSessionDate": "2025-03-23T10:00:00Z",
+    "suggest": [
+      "Course Title 50"
+    ]
+  }
+]

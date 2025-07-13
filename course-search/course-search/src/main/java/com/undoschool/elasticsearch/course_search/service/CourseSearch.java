@@ -18,10 +18,52 @@ import java.util.List;
 @Service
 @RequiredArgsConstructor
 @Slf4j
-public class CourseSearch {
+public class CourseSearch { // 🟢 CLASS STARTS HERE
 
     private final ElasticsearchClient elasticsearchClient;
 
+    /**
+     * Autocomplete suggestions
+     */
+    public List<String> suggest(String query) {
+        List<String> suggestions = new ArrayList<>();
+        try {
+            var response = elasticsearchClient.search(s -> s
+                            .index("courses") // Your index name
+                            .suggest(sg -> sg
+                                    .suggesters("course-suggest", sg1 -> sg1
+                                            .text(query) // 🟢 Set the prefix text for suggestions
+                                            .completion(c -> c
+                                                    .field("suggest") // The completion field
+                                                    .skipDuplicates(true)
+                                                    .size(10)
+                                            )
+                                    )
+                            ),
+                    CourseDocument.class
+            );
+
+            var suggestMap = response.suggest();
+            if (suggestMap != null && suggestMap.containsKey("course-suggest")) {
+                suggestMap.get("course-suggest").forEach(suggestion -> {
+                    suggestion.completion().options().forEach(option -> {
+                        suggestions.add(option.text());
+                    });
+                });
+            }
+
+        } catch (Exception e) {
+            log.error("Error fetching suggestions: {}", e.getMessage(), e);
+        }
+        return suggestions;
+    }
+
+
+
+
+    /**
+     * Search for courses with filters
+     */
     public List<CourseDocument> searchCourses(
             String query, Integer minAge, Integer maxAge,
             String category, String type,
@@ -39,13 +81,6 @@ public class CourseSearch {
                         .lte(maxAge != null ? JsonData.of(maxAge) : null)
                 )._toQuery();
                 filters.add(ageRange);
-            }
-
-            if (minAge != null || maxAge != null) {
-                RangeQuery.Builder ageBuilder = new RangeQuery.Builder().field("minAge");
-                if (minAge != null) ageBuilder.gte(JsonData.of(minAge));
-                if (maxAge != null) ageBuilder.lte(JsonData.of(maxAge));
-                filters.add(ageBuilder.build()._toQuery());
             }
 
             if (category != null) {
@@ -76,14 +111,16 @@ public class CourseSearch {
                         .must(MultiMatchQuery.of(m -> m
                                 .fields("title", "description")
                                 .query(query)
+                                .fuzziness("AUTO") // Allow typos
                         )._toQuery())
+
                         .filter(filters)
                 )._toQuery();
             } else {
                 mainQuery = MatchAllQuery.of(m -> m)._toQuery();
             }
 
-// 🟢 3. Sorting
+            // 🟢 3. Sorting
             final String sortField;
             final SortOrder sortOrder;
             if ("priceAsc".equals(sort)) {
@@ -97,7 +134,7 @@ public class CourseSearch {
                 sortOrder = SortOrder.Asc;
             }
 
-// 🟢 4. Search request
+            // 🟢 4. Search request
             SearchRequest searchRequest = SearchRequest.of(s -> s
                     .index("courses")
                     .query(mainQuery)
